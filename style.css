@@ -1,0 +1,144 @@
+header{
+    width: 100%;
+    height: 100vh;
+}
+nav{
+    
+    border-bottom: 1px solid grey;
+    width: 100%;
+    height: 70px;
+     box-shadow: 2px 0px 5px grey;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+}
+
+.logo{
+    font-size: 60px;
+    font-weight: bold;
+}
+.menu a{
+text-decoration: none;
+font-size: 20px;
+color: rgb(101, 101, 241);
+padding: 10px 20px;
+margin: 5px;
+font-weight: bold;
+}
+.menu a:last-child{
+    background: rgb(124, 124, 240);
+    color: white;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    transform-origin: center;
+    perspective: 200px;
+}
+.left{
+    flex-basis: 50%;
+    animation: animate 3s linear infinite;
+}
+
+@keyframes animate{
+0%{
+    transform: scale(1.1);
+}
+50%{
+    transform: scale(1);
+}
+100%{
+    transform: scale(1.1);
+}
+
+}
+.right{
+    flex-basis: 50%;
+    max-width: 400px;
+    margin-left: 100px;
+}
+.right h1{
+    font-size: 50px;
+    color: rgb(124, 124, 243);
+
+}
+.right p{
+    font-size: 25px;
+    margin: 20px 0px;
+}
+button{
+    background: black;
+    color: white;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+#featured{
+    padding: 50px 0px;
+    font-size: 25px;
+    text-align: center;
+    
+}
+.brand{
+    display: grid;
+    grid-template-columns: repeat(5,20%);
+    grid-auto-rows: minmax(200px,auto);
+    
+}
+
+.brand>div img{
+    width: 90%;
+    overflow: hidden;
+}
+.brand> div img {
+    transition: 1s ease;
+}
+.brand> div img:hover{
+    -webkit-transform: scale(1.2);
+-ms-transform: scale(1.2);
+transform: scale(1.2);
+transition: 1s ease;
+}
+
+#plussize{
+    padding: 50px 10px;
+    font-size: 25px;
+    text-align: center;
+    
+    
+}
+.plus{
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    grid-auto-rows: minmax(200px,auto);
+    
+}
+
+.plus>div img{
+    width: 90%;
+    overflow: hidden;
+   align-content: center;
+}
+.plus> div img {
+    transition: 1s ease;
+}
+.plus> div img:hover{
+    -webkit-transform: scale(1.2);
+-ms-transform: scale(1.2);
+transform: scale(1.2);
+transition: 1s ease;
+}
+.connect{
+    background-color: black;
+                        width: 1110px;
+
+                        padding: 50px;
+                        margin: 20px;
+                }
+
+
+               
